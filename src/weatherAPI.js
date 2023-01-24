@@ -6,11 +6,13 @@ async function getData(_city) {
 
     try{
         const response = await fetch(url, { mode: "cors" });
+        if (!response.ok) throw new Error(`City of ${city} not found!`);
         const data = await response.json();
         return data;
     }
     catch(error){
         alert(error);
+        return null;
     }
 }
 

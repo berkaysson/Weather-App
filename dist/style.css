@@ -1,0 +1,107 @@
+:root{
+    --first-color: #d3d5e9; 
+    --secondary-color: #9ab4c9;
+    --alternative-color: #31314b;
+    --active-color: #36a5e6;
+    --background-color: #1d1e2c;
+    --danger-color: #e63946;
+
+    --gap: 1rem;
+    --padding: 1rem;
+    --padding-sl: 0.6rem;
+    --padding-lg:4rem;
+    --btn-padding: 0.6rem;
+    --margin: 1.2rem;
+
+    --border-radius:3px;
+
+    --font-lg: 1.5rem;
+    --font-xlg: 4rem;
+    --font-sl: 0.8rem;
+    --font-md: 1rem;
+    --font-thin: 100;
+
+    --transition-size:width 0.2s ease-in;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color: var(--background-color);
+    color: var(--first-color);
+}
+
+header{
+    background-color: var(--alternative-color);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding);
+}
+
+h1 {
+    font-size: var(--font-xlg);
+    margin-left: var(--margin);
+}
+
+header>i {
+    font-size: var(--font-xlg);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    padding: var(--padding-lg);
+}
+
+input {
+    padding: var(--btn-padding);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--secondary-color);
+    font-size: var(--font-md);
+    background-color: var(--first-color);
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    font-size: var(--font-md);
+    color: inherit;
+    padding: var(--btn-padding);
+    border: 1px var(--secondary-color) solid;
+    border-radius: var(--border-radius);
+    margin-left: 1rem;
+}
+
+button:hover {
+    color: var(--alternative-color);
+    background-color: var(--first-color);
+}
+
+#forecast-card{
+    border: 2px var(--secondary-color) solid;
+    border-radius: var(--border-radius);
+    padding: var(--padding-lg);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    
+    line-height: 4rem;
+    font-size: var(--font-lg);
+}
