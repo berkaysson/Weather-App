@@ -105,3 +105,22 @@ button:hover {
     line-height: 4rem;
     font-size: var(--font-lg);
 }
+
+@media only screen and (max-width: 600px) {
+    :root{
+        --gap: 0.8rem;
+        --padding: 0.8rem;
+        --padding-sl: 0.4rem;
+        --padding-lg:3rem;
+        --btn-padding: 0.5rem;
+        --margin: 1rem;
+    
+        --border-radius:3px;
+    
+        --font-lg: 1.2rem;
+        --font-xlg: 3rem;
+        --font-sl: 0.7rem;
+        --font-md: 0.9rem;
+        --font-thin: 100;
+    }
+}
